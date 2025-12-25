@@ -66,6 +66,7 @@
 }
 
 .title {
+  font-family: var(--font-mamboe);
   font-size: clamp(4rem, 12vw, 10rem);
   font-weight: 900;
   background: linear-gradient(135deg, #0066CC 0%, #60A5FA 50%, #0066CC 100%);
@@ -75,7 +76,6 @@
   background-clip: text;
   margin-bottom: 1rem;
   animation: gradientShift 8s ease infinite;
-  letter-spacing: -0.05em;
   line-height: 1;
 }
 
