@@ -49,18 +49,24 @@ export default function Contact() {
 
         {/* Links sociais */}
         <div className={styles.socialGrid}>
-          {socialLinks.map((social) => (
-            <a
-              key={social.name}
-              href={social.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`${styles.socialLink} ${social.className}`}
-              aria-label={social.name}
-            >
-              <span className={styles.icon}>{social.icon}</span>
-            </a>
-          ))}
+          {socialLinks.map((social) => {
+            const isEmail = social.url.startsWith("mailto:");
+            const targetProps = isEmail
+              ? {}
+              : { target: "_blank", rel: "noopener noreferrer" };
+
+            return (
+              <a
+                key={social.name}
+                href={social.url}
+                className={`${styles.socialLink} ${social.className}`}
+                aria-label={social.name}
+                {...targetProps}
+              >
+                <span className={styles.icon}>{social.icon}</span>
+              </a>
+            );
+          })}
         </div>
       </div>
     </section>
