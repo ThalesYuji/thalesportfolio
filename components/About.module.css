@@ -51,6 +51,7 @@
 }
 
 .title {
+  font-family: var(--font-mamboe);  /* ADICIONE ESTA LINHA */
   font-size: clamp(3rem, 8vw, 5rem);
   font-weight: 900;
   background: linear-gradient(135deg, #0066CC, #60A5FA);
