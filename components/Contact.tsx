@@ -26,7 +26,7 @@ export default function Contact() {
     {
       name: "Email",
       icon: <FaEnvelope size={32} />,
-      url: "https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwRdwTPgTvWXzPQfFRCKDVTHtlFHHbRBSJMZMVqjFlSBljgVWrHZWrHsvNhLHNSfWbtNMhN",
+      url: "mailto:thalesyuuji@gmail.com",
       className: styles.email,
     },
   ];
