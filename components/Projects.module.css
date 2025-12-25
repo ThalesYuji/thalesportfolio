@@ -300,8 +300,8 @@
 
 .closeModal {
   position: absolute;
-  top: -3rem;
-  right: 0;
+  top: 0rem;
+  right: -60;
   background: rgba(0, 102, 204, 0.2);
   border: 2px solid rgba(0, 102, 204, 0.4);
   border-radius: 50%;
