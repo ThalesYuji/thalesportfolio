@@ -33,19 +33,6 @@ yarn-error.log*
 # env files (can opt-in for committing if needed)
 .env*
 
-# Vídeos grandes
-*.mp4
-*.mov
-*.avi
-*.mkv
-
-# Pasta de vídeos do portfólio
-public/videos/
-
-# ADICIONE ESSAS LINHAS AQUI 👇
-# Pasta de imagens do portfólio
-public/imagens/
-
 # vercel
 .vercel
 
