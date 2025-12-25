@@ -1,0 +1,145 @@
+.contact {
+  min-height: 100vh;
+  padding: 8rem 2rem;
+  background: linear-gradient(180deg, #0F172A 0%, #1E3A8A 100%);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header {
+  margin-bottom: 3rem;
+}
+
+.title {
+  font-size: clamp(3rem, 8vw, 5rem);
+  font-weight: 900;
+  background: linear-gradient(135deg, #0066CC, #60A5FA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1rem;
+}
+
+.divider {
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #0066CC, #60A5FA);
+  margin: 0 auto 2rem;
+  border-radius: 2px;
+}
+
+.description {
+  font-size: 1.25rem;
+  color: rgba(241, 245, 249, 0.8);
+  line-height: 1.6;
+  margin-bottom: 4rem;
+}
+
+.socialGrid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.socialLink {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(0, 102, 204, 0.3);
+  border-radius: 20px;
+  color: #60A5FA;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.socialLink::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(0, 102, 204, 0.2), rgba(96, 165, 250, 0.2));
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.socialLink:hover {
+  transform: translateY(-10px) scale(1.1);
+  border-color: #60A5FA;
+  box-shadow: 0 15px 40px rgba(96, 165, 250, 0.4);
+}
+
+.socialLink:hover::before {
+  opacity: 1;
+}
+
+.icon {
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.socialLink:hover .icon {
+  transform: scale(1.2);
+}
+
+/* Cores específicas para cada rede social */
+.instagram:hover {
+  border-color: #E4405F;
+  color: #E4405F;
+  box-shadow: 0 15px 40px rgba(228, 64, 95, 0.4);
+}
+
+.youtube:hover {
+  border-color: #FF0000;
+  color: #FF0000;
+  box-shadow: 0 15px 40px rgba(255, 0, 0, 0.4);
+}
+
+.linkedin:hover {
+  border-color: #0077B5;
+  color: #0077B5;
+  box-shadow: 0 15px 40px rgba(0, 119, 181, 0.4);
+}
+
+.email:hover {
+  border-color: #60A5FA;
+  color: #60A5FA;
+  box-shadow: 0 15px 40px rgba(96, 165, 250, 0.4);
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 5rem 1.5rem;
+  }
+  
+  .description {
+    font-size: 1.1rem;
+  }
+  
+  .socialGrid {
+    gap: 1.5rem;
+  }
+  
+  .socialLink {
+    width: 70px;
+    height: 70px;
+  }
+}
