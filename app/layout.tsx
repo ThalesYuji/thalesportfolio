@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Thales Nishikawa | Motion Designer & Video Editor",
+  title: "Thales| Motion Designer & Video Editor",
   description: "Portfolio de Thales Yuji Nishikawa - Motion Designer e Video Editor especializado em edições dinâmicas, anime motion edits e sincronização audiovisual. Mais de 4 anos de experiência.",
   keywords: ["motion designer", "video editor", "editor de vídeo", "anime edits", "after effects", "premiere pro"],
   authors: [{ name: "Thales Yuji Nishikawa" }],
